@@ -22,41 +22,6 @@ function HomeScreen(props) {
     // backgroundColor: '#000' //
   };
 
-  // const staticText = "I'm "; // The part that stays the same
-  // const dynamicTexts = ["Pradip Mondal.", "a Freelancer.", "a App Developer.", "a Web Developer."]; // The dynamic part
-
-  // const [displayedText, setDisplayedText] = useState('');
-  // const [index, setIndex] = useState(0);
-  // const [isDeleting, setIsDeleting] = useState(false);
-  // const [dynamicIndex, setDynamicIndex] = useState(0);
-
-  // useEffect(() => {
-  //   const currentDynamicText = dynamicTexts[dynamicIndex];
-
-  //   const handleTyping = () => {
-  //     if (!isDeleting && index < currentDynamicText.length) {
-  //       // Typing forward for the dynamic part
-  //       setDisplayedText(staticText + currentDynamicText.slice(0, index + 1));
-  //       setIndex(index + 1);
-  //     } else if (isDeleting && index > 0) {
-  //       // Deleting the dynamic part
-  //       setDisplayedText(staticText + currentDynamicText.slice(0, index - 1));
-  //       setIndex(index - 1);
-  //     } else if (!isDeleting && index === currentDynamicText.length) {
-  //       // Start deleting after completing the dynamic part
-  //       setIsDeleting(true);
-  //     } else if (isDeleting && index === 0) {
-  //       // Switch to the next dynamic text after deleting
-  //       setIsDeleting(false);
-  //       setDynamicIndex((prevIndex) => (prevIndex + 1) % dynamicTexts.length);
-  //     }
-  //   };
-
-  //   const timeout = setTimeout(handleTyping, isDeleting ? 80 : 200); // Faster for deleting
-
-  //   return () => clearTimeout(timeout);
-  // }, [index, isDeleting, dynamicIndex, dynamicTexts]);
-
   const staticText = "I'm "; // The part that stays the same
   const dynamicTexts = [
     "Pradip Mondal.",

@@ -43,7 +43,9 @@ const CustomHeader = ({onNavClick,hoveredSection}) => {
         <div style={{ color: "white" }}>
           <Navbar.Brand 
           href="#home" 
-          className="text-white me-auto test">
+          className="text-white me-auto test"
+          onClick={() => {setcurrentSection('home');onNavClick("home")}}
+          >
             <strong style={{ fontSize: 30,color:'#fff' }}>Pradip</strong>
           </Navbar.Brand>
         </div>
