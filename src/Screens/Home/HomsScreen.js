@@ -125,7 +125,7 @@ function HomeScreen(props) {
             {displayedText}{showCursor ? "|" : " "}{" "}
           </h1>
 
-          <h4 style={{ color: "white", textAlign: "center", marginTop: 20 }}>
+          <h4 style={{ color: "black", textAlign: "center", marginTop: 20 }}>
             based in Kolkata, India.
           </h4>
 
