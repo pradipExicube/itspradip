@@ -140,7 +140,7 @@ function HomeScreen(props) {
             {/* <div style={{
               height:50,width:80,borderRadius:15, paddingRight:30,
               color:'red',borderWidth:10,borderColor:'red'}}>Hire Me</div> */}
-            <Button variant="outline-danger" className="hireMeBtn">Hire Mecdcd</Button>{" "}
+            <Button variant="outline-danger" className="hireMeBtn">Hire Me</Button>{" "}
           </div>
         </div>
       </div>

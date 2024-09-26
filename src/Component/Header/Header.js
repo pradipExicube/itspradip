@@ -10,7 +10,7 @@ const CustomHeader = ({onNavClick,hoveredSection}) => {
   const [currentSection, setcurrentSection] = useState('home');
 
   useEffect(() =>{
-    setcurrentSection(hoveredSection);
+    setcurrentSection(hoveredSection? hoveredSection :'home');
   },[hoveredSection])
 
   useEffect(() => {
