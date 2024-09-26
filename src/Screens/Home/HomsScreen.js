@@ -13,7 +13,7 @@ function HomeScreen(props) {
   const backgroundStyle = {
     // backgroundImage: "url('https://techinvein.com/wp-content/uploads/2021/11/3.png')",
     // backgroundImage: `url(${introBg})`,
-    backgroundImage: `url(images/image/intro-bg.jpg)`,
+    backgroundImage: url(`images/image/intro-bg.jpg`),
     backgroundSize: "cover", // Adjusts the image to cover the entire area
     backgroundPosition: "center", // Centers the image
     height: "100vh", // Make the background image take up full viewport height
@@ -125,7 +125,7 @@ function HomeScreen(props) {
             {displayedText}{showCursor ? "|" : " "}{" "}
           </h1>
 
-          <h4 style={{ color: "black", textAlign: "center", marginTop: 20 }}>
+          <h4 style={{ color: "white", textAlign: "center", marginTop: 20 }}>
             based in Kolkata, India.
           </h4>
 
