@@ -12,7 +12,8 @@ function HomeScreen(props) {
 
   const backgroundStyle = {
     // backgroundImage: "url('https://techinvein.com/wp-content/uploads/2021/11/3.png')",
-    backgroundImage: `url(${introBg})`,
+    // backgroundImage: `url(${introBg})`,
+    backgroundImage: `url(images/image/intro-bg.jpg)`,
     backgroundSize: "cover", // Adjusts the image to cover the entire area
     backgroundPosition: "center", // Centers the image
     height: "100vh", // Make the background image take up full viewport height
