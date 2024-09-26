@@ -36,7 +36,6 @@ function App() {
     // secondComponentRef.current.scrollIntoView({ behavior: "smooth" });
   };
 
-
   const [hoveredSection, setHoveredSection] = useState(null);
 
   // Function to handle mouse entering a section
@@ -49,12 +48,30 @@ function App() {
     setHoveredSection(null); // Clear the hovered section when the mouse leaves
   };
 
-
   return (
     <Router>
       <div>
-        <CustomHeader onNavClick={scrollToSecondComponent} hoveredSection={hoveredSection} />
-        <Routes>
+        <CustomHeader
+          onNavClick={scrollToSecondComponent}
+          hoveredSection={hoveredSection}
+        />
+        <div
+          ref={homeComponentRef}
+          id="home"
+          onMouseEnter={() => handleMouseEnter("home")}
+          onMouseLeave={handleMouseLeave}
+        >
+          <HomeScreen />
+        </div>
+        <div
+          ref={AboutComponentRef}
+          id="about"
+          onMouseEnter={() => handleMouseEnter("about")}
+          onMouseLeave={handleMouseLeave}
+        >
+          <AboutScreen />
+        </div>
+        {/* <Routes>
           <Route
             path="/"
             element={
@@ -75,16 +92,13 @@ function App() {
                 >
                   <AboutScreen />
                 </div>
-                {/* <AboutScreen />
-                <ContactScreen />
-                <HomeScreen /> */}
               </>
             }
           />
-          {/* <Route exact path="/home" element={<HomeScreen />} />
+          <Route exact path="/home" element={<HomeScreen />} />
           <Route exact path="/about" element={<AboutScreen />} />
-          <Route exact path="/contact" element={<ContactScreen />} /> */}
-        </Routes>
+          <Route exact path="/contact" element={<ContactScreen />} />
+        </Routes> */}
         {/* <HomeScreen />
       <HomeScreen />
       <HomeScreen />
