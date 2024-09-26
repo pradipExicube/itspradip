@@ -1,0 +1,42 @@
+/* == cursor effect ===== */
+.cursor {
+    font-weight: bold;
+    display: inline-block;
+    width: 1ch;
+    animation: blink 1s steps(1) infinite;
+  }
+  
+  @keyframes blink {
+    50% {
+      opacity: 0;
+    }
+  }
+
+  /* === HOME SCREEN ===== */
+  .home-mainDiv{
+    height: 100%;
+    width: 100%;
+    flex-direction: column;
+    display: flex;
+    background: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+  }
+  .home-mainTitle{ color: white; text-align: center; }
+  .home-mainDesc{
+    color: white; text-align: center; margin-top: 5px;
+    font-size: 50px; font-weight: "600"; letter-spacing: 0.5px;
+  }
+
+
+  /* == Hire me Buttons ===== */
+  .hireMeBtn{
+    padding-left:20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    letter-spacing: 1px;
+    &:hover{
+        font-weight: bold;
+    }
+  }
+
