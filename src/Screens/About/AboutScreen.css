@@ -1,6 +1,158 @@
-.customFont{
-    font-size: 7rem;
-    @media screen and (max-width: 768px) {
-    font-size: 4rem;
-    }
+/* == relative and absolute view design [About us + know more] ==== */
+.about-mainDiv {
+  /* height:window.innerHeight, */
+  background-color: #272727;
+  position: relative;
+	padding-bottom: 50px;
+}
+.customFont {
+  font-size: 7rem;
+  color:white;
+	padding-top:'6%';
+	text-transform:uppercase;
+	font-weight:600;
+	text-align:center;
+	opacity:0.05;
+
+	@media screen and (max-width: 768px) {
+		font-size: 4rem;
+	}
+}
+.about-subDiv{
+	justify-content:center;
+	flex-direction:column;
+	align-items:center;
+	display:flex;
+	height:200px;
+}
+.about-insideText{
+	font-size: 2rem;
+	width:100%;
+	position:absolute;
+	top:0px;
+	height:200px;
+	display:flex;
+	flex-direction:column;
+	justify-content:center;
+
+	@media screen and (max-width: 768px) {
+		font-size: 1rem;
+	}
+}
+.about-knowmore{
+	color:white;
+	text-transform:uppercase;
+	font-weight:600;
+	text-align:center;
+}
+.about-borderMainDiv{
+	width:100%;
+	display:flex;
+	flex-direction:row;
+	justify-content:center;
+}
+.borderStyle{
+	height:2px;
+	width:70px;
+	background-color:red;
+	border-radius:10px;
+
+	@media screen and (max-width: 768px) {
+		width:30px;
+	}
+}
+
+
+/* == Other design ==== */
+.about-descriptionDiv{
+	display: flex;
+	flex-direction: row;
+	flex:1;
+	justify-content: space-around;
+	padding-left: 7rem;
+	padding-right: 7rem;
+	padding-top: 2rem;
+	color: white;
+
+	@media screen and (max-width: 768px) {
+		flex-direction: column;
+		text-align: center;
+	}
+	
+}
+.about-row-one{
+	display: flex;
+	flex-direction: column;
+	flex:1.5;
+}
+.row-one-heading{
+	font-size: 2rem;;
+	@media screen and (max-width: 768px) {
+		text-align: center;
+	}
+}
+.row-one-desc1{
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+	@media screen and (max-width: 768px) {
+		text-align: center;
+	}
+}
+
+
+
+.about-row-two{
+	display: flex;
+	flex-direction: column;
+	flex:1;
+	justify-content: center;
+
+
+}
+.row-two-mainDiv{
+	/* display: flex;
+	flex-direction:'column';
+	justify-content:'center'; */
+}
+.row-two-item1{
+	display: flex;
+	flex-direction: row;
+	@media screen and (max-width: 768px) {
+		justify-content: center;
+		margin-top: 1.5rem;
+	}
+}
+.row-two-item2{
+	display: flex;
+	flex-direction: row;
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+	@media screen and (max-width: 768px) {
+		justify-content: center;
+	}
+}
+.row-two-item3{
+	display: flex;
+	flex-direction: row;
+	padding-bottom: 1rem;
+	@media screen and (max-width: 768px) {
+		justify-content: center;
+	}
+}
+
+/* == Download CV Buttons ===== */
+.downloadCV{
+	padding-left:20px;
+	padding-right: 20px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	letter-spacing: 1px;
+	&:hover{
+			font-weight: bold;
+	}
+
+	@media screen and (max-width: 768px) {
+		justify-content: center;
+		margin-top: 20px;
+	}
 }

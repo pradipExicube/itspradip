@@ -83,46 +83,53 @@ function AboutScreen(props) {
 
   return (
     <>
-      <div className="section bg-dark-1" style={{height:window.innerHeight,background:'#272727',position:'relative'}}>
-        <div className="customFont" style={{color:'white',paddingTop:'6%',
-        textTransform:'uppercase',fontWeight:'600',textAlign:'center',opacity:0.05}}> About ME</div>
-        <div style={{width:'100%',position:'absolute',top:'21%',    }}>
-        
-        <div style={{color:'white',fontSize:30,
-        textTransform:'uppercase',fontWeight:'600',textAlign:'center',
-        textAlign:'center',}}>Know me more</div>
+      <div className="about-mainDiv">
+        <div className="about-subDiv">
+          <div className="customFont"> About ME</div>
 
-        <div style={{width:"100%",
-        display:"flex",flexDirection:'row',justifyContent:'center'}}>
-          <div style={{height:2,width:70,background:'red',borderRadius:10}}></div>
-        </div>
-
-        </div>
-        {/* <div className="home-mainDiv" >
-          <h4 className="home-mainTitle">Welcome</h4>
-          <h1 className="home-mainDesc" >
-            {displayedText}{showCursor ? "|" : " "}{" "}
-          </h1>
-
-          <h4 style={{ color: "white", textAlign: "center", marginTop: 20 }}>
-            based in Kolkata, India.
-          </h4>
-
-          <div
-            style={{
-              display: "flex",
-              flexDirection: "row",
-              justifyContent: "center",
-              marginTop: 20,
-            }}
-          >
-            <Button variant="outline-danger" className="hireMeBtn">Hire Me</Button>{" "}
+          <div className="about-insideText">
+            <div className="about-knowmore">Know me more</div>
+            <div className="about-borderMainDiv">
+              <div className="borderStyle"></div>
+            </div>
           </div>
-        </div> */}
+        </div>
+
+        <div className="about-descriptionDiv">
+          <div className="about-row-one">
+            <div className="row-one-heading">I'm <strong style={{color:'red'}}>Pradip Mondal,</strong> a App Developer</div>
+            <div className="row-one-desc1">
+              I help you build brand for your business at an affordable price.
+              Thousands of clients have procured exceptional results while
+              working with our dedicated team. when an unknown printer took a
+              galley of type and scrambled it to make a type specimen book.
+            </div>
+
+            <div className="row-one-desc1">
+              Delivering work within time and budget which meets client’s
+              requirements is our moto. Lorem Ipsum has been the industry's
+              standard dummy text ever when an unknown printer took a galley.
+            </div>
+          </div>
+
+          <div style={{flex:0.3}}></div>
+
+          <div className="about-row-two">
+            <div className="row-two-mainDiv">
+                <div className="row-two-item1">Name: <div> Pradip Mondal</div></div>
+                <div className="row-two-item2">Email: <div> pradipm.info@gmail.com</div></div>
+                <div className="row-two-item3">From: <div> Kolkata, India</div></div>
+
+                <div>
+                <Button variant="outline-danger" className="downloadCV">Download CV</Button>{" "}
+                </div>
+            </div>
+          </div>
+
+        </div>
       </div>
     </>
   );
 }
 
 export default AboutScreen;
-
