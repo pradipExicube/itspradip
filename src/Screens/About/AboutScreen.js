@@ -4,7 +4,8 @@ import { Button } from "react-bootstrap";
 import "./AboutScreen.css";
 function AboutScreen(props) {
   const navigate = useNavigate();
-  const cvURL = "https://drive.google.com/file/d/1NZY5ywhj6T06tjJ3BJoGG8hypX4afsj2/view?usp=sharing";
+  // const cvURL = "https://drive.google.com/file/d/1NZY5ywhj6T06tjJ3BJoGG8hypX4afsj2/view?usp=sharing";
+  const cvURL = "https://www.antennahouse.com/hubfs/xsl-fo-sample/pdf/basic-link-1.pdf"
 
 
   return (
