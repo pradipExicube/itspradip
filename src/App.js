@@ -20,6 +20,7 @@ import AboutScreen from "./Screens/About/AboutScreen";
 import ContactScreen from "./Screens/ContactUs";
 import HomeScreen from "./Screens/Home/HomsScreen";
 import CustomFooter from "./Component/Footer/Footer";
+import OurserviceScreen from "./Screens/OurServices/OurService";
 function App() {
   const homeComponentRef = useRef(null);
   const AboutComponentRef = useRef(null);
@@ -30,6 +31,8 @@ function App() {
       case "home":
         homeComponentRef.current.scrollIntoView({ behavior: "smooth" });
       case "about":
+        AboutComponentRef.current.scrollIntoView({ behavior: "smooth" });
+      case "ourservice":
         AboutComponentRef.current.scrollIntoView({ behavior: "smooth" });
       // case 'home': secondComponentRef.current.scrollIntoView({ behavior: "smooth" });
     }
@@ -71,6 +74,17 @@ function App() {
         >
           <AboutScreen />
         </div>
+
+        <div
+          ref={AboutComponentRef}
+          id="ourservice"
+          onMouseEnter={() => handleMouseEnter("ourservice")}
+          onMouseLeave={handleMouseLeave}
+        >
+          <OurserviceScreen />
+        </div>
+
+        
 
         {/* <Routes>
           <Route exact

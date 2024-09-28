@@ -56,7 +56,7 @@ const CustomHeader = ({onNavClick,hoveredSection}) => {
               Home
             </Nav.Link>
             <Nav.Link href="#about" className={currentSection == 'about' ? "active" : ""} onClick={() => {setcurrentSection('about');onNavClick("about")}}>About</Nav.Link>
-            <Nav.Link href="#what-i-do">What I Do</Nav.Link>
+            <Nav.Link href="#ourservice" className={currentSection == 'ourservice' ? "active" : ""}>What I Do</Nav.Link>
             <Nav.Link href="#resume">Resume</Nav.Link>
             <Nav.Link href="#portfolio">Portfolio</Nav.Link>
             <Nav.Link href="#client">Client</Nav.Link>
