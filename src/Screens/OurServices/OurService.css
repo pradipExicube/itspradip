@@ -127,134 +127,16 @@
 	filter: brightness(0)saturate(100%) invert(29%) sepia(77%) saturate(4486%) hue-rotate(346deg) brightness(95%) contrast(105%);
 }
 
-.repeat-desc-div{
-	padding-left: 20px;
-}
-
 .desc-title{
 	font-size: 1.6rem;
 	padding-bottom: 5px;
 	font-weight: 600;
 	letter-spacing: 1px;
+	color: #fff;
 }
 
 .desc-content{
 	font-size: 0.9rem;
 	letter-spacing: 0.8px;
-}
-
-
-
-
-@media screen and (max-width: 768px) {
-	.repeat-mainDiv{
-    flex-direction: column;
-    margin-left: 1rem;
-    width: 100%;
-	}
-  .repeat-container {
-    width: 76%;
-    text-align: left;
-  }
-}
-
-
-@media screen and (max-width: 1024px) {
-  .repeat-container {
-    width: 76%;
-    text-align: left;
-  }
-}
-
-
-
-/* @media screen and (min-width: 480px) {
-		.repeat-container{
-			width: 76%;
-			text-align: left;
-		}
-	} */
-
-.service-row-one {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-around;
-}
-.row-one-heading {
-  font-size: 2rem;
-  @media screen and (max-width: 768px) {
-    text-align: center;
-  }
-}
-.row-one-desc1 {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-  @media screen and (max-width: 768px) {
-    text-align: center;
-  }
-}
-
-.service-row-two {
-  display: flex;
-  flex-direction: column;
-  flex: 1;
-  justify-content: center;
-}
-.row-two-mainDiv {
-  letter-spacing: 1px;
-}
-.row-two-item1 {
-  display: flex;
-  flex-direction: row;
-  padding-bottom: 10px;
-  border-bottom: 1px solid #4a4a4a;
-  @media screen and (max-width: 768px) {
-    /* justify-content: center; */
-    margin-top: 1.5rem;
-  }
-}
-.row-two-item2 {
-  display: flex;
-  flex-direction: row;
-  /* padding-top: 0.8rem; */
-  /* padding-bottom: 0.8rem; */
-  padding-bottom: 10px;
-  padding-top: 10px;
-  border-bottom: 1px solid #4a4a4a;
-  @media screen and (max-width: 768px) {
-    /* justify-content: center; */
-  }
-}
-.row-two-item3 {
-  display: flex;
-  flex-direction: row;
-  /* padding-bottom: 0.8rem; */
-  padding-bottom: 10px;
-  padding-top: 10px;
-  border-bottom: 1px solid #4a4a4a;
-  @media screen and (max-width: 768px) {
-    /* justify-content: center; */
-  }
-}
-
-/* == Download CV Buttons ===== */
-.downloadCV {
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  letter-spacing: 1px;
-  margin-top: 30px;
-  letter-spacing: 1px;
-  &:hover {
-    font-weight: bold;
-  }
-
-  @media screen and (max-width: 768px) {
-    /* justify-content: center; */
-    /* margin-top: 20px; */
-    display: flex;
-    flex-direction: row;
-  }
+	color: #fff;
 }

@@ -30,11 +30,14 @@
 
   /* == Hire me Buttons ===== */
   .hireMeBtn{
-    padding-left:20px;
-    padding-right: 20px;
+    padding-left:30px;
+    padding-right: 30px;
     padding-top: 10px;
     padding-bottom: 10px;
     letter-spacing: 1px;
+    /* background-color: rgba(247, 191, 191, 0.355);
+    border-width: 0px !important;
+    color: white; */
     &:hover{
         font-weight: bold;
     }

@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import styles from "./HomeScreen.css";
-import { Button } from "react-bootstrap";
+import { Button,Container,Row,Col } from "react-bootstrap";
 // import { FaFacebook,FaWhatsapp } from "react-icons/fa";
 import { MdOutlineArrowCircleRight } from "react-icons/md";
 import "./HomeScreen.css";
@@ -11,22 +11,21 @@ function HomeScreen(props) {
   const dataV = "I'm a software developer|";
 
   const backgroundStyle = {
-    // backgroundImage: "url('https://techinvein.com/wp-content/uploads/2021/11/3.png')",
     backgroundImage: `url(${introBg})`,
-    // backgroundImage: url(`images/image/intro-bg.jpg`),
     backgroundSize: "cover", // Adjusts the image to cover the entire area
     backgroundPosition: "center", // Centers the image
-    height: "100vh", // Make the background image take up full viewport height
+    height: "90vh", // Make the background image take up full viewport height
     width: "100%",
     // opacity:0.5,
-    // backgroundColor: '#000' //
+    // backgroundColor: '#000'
+    backgroundSize: 'cover',
   };
 
   const staticText = "I'm "; // The part that stays the same
   const dynamicTexts = [
     "Pradip Mondal.",
     "a Freelancer.",
-    "an App Developer.",
+    "a App Developer.",
     "a Web Developer.",
   ]; // The dynamic part
 
@@ -102,9 +101,6 @@ function HomeScreen(props) {
               marginTop: 20,
             }}
           >
-            {/* <div style={{
-              height:50,width:80,borderRadius:15, paddingRight:30,
-              color:'red',borderWidth:10,borderColor:'red'}}>Hire Me</div> */}
             <Button variant="outline-danger" className="hireMeBtn">Hire Me</Button>{" "}
           </div>
         </div>

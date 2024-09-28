@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
-import { Button } from "react-bootstrap";
+import { Button, Row, Container, Col } from "react-bootstrap";
 import "./OurService.css";
 
 import ionicLogo from "../../images/image/ionic.svg";
@@ -44,30 +44,33 @@ function OurserviceScreen(props) {
           </div>
         </div>
 
-
-				<div className="service-descriptionDiv">
-				<div className="repeat-mainDiv">
-				{services.map((item, index) => {
-              return <div className="repeat-container">
-                <div className="repeat-imgContainer">
-                  <img
-                    src={item?.s_imgUrl}
-                    alt="ionicicon"
-										className="repeat-img"
-                  />
-                </div>
-
-                <div className="repeat-desc-div">
-                  <div className="desc-title">{item?.s_name}</div>
-                  <div className="desc-content">{item?.s_description}</div>
-                </div>
-              </div>;
+        <Container>
+          <Row>
+            {services.map((item, index) => {
+              return (
+                <Col xs={12} md={6} lg={6} color='white'>
+                  <div style={{ display: "flex", flexDirection: "row",marginBottom:20 }}>
+                    <div className="repeat-imgContainer">
+                      <img
+                        src={item?.s_imgUrl}
+                        alt="ionicicon"
+                        className="repeat-img"
+                      />
+                    </div>
+                    <div style={{paddingLeft:20}}>
+                      <div className="desc-title box">
+                        {item?.s_name}
+                      </div>
+											<div className="desc-content box">
+                        {item?.s_description}
+                      </div>
+                    </div>
+                  </div>
+                </Col>
+              );
             })}
-				</div>
-				</div>
-
-
-
+          </Row>
+        </Container>
       </div>
     </>
   );
