@@ -7,10 +7,10 @@ import { Link } from "react-router-dom";
 
 const CustomHeader = ({ onNavClick, hoveredSection }) => {
   const [isAnimated, setIsAnimated] = useState(false);
-  const [currentSection, setcurrentSection] = useState("home");
+  const [currentSection, setcurrentSection] = useState();
 
   useEffect(() => {
-    setcurrentSection(hoveredSection ? hoveredSection : "home");
+    setcurrentSection(hoveredSection ? hoveredSection : "");
   }, [hoveredSection]);
 
   useEffect(() => {

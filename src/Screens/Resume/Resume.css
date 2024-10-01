@@ -127,6 +127,15 @@
 	filter: brightness(0)saturate(100%) invert(29%) sepia(77%) saturate(4486%) hue-rotate(346deg) brightness(95%) contrast(105%);
 }
 
+.desc-title-first{
+	font-size: 1.6rem;
+	padding-bottom: 5px;
+	font-weight: 600;
+	letter-spacing: 1px;
+	color: #fff;
+  margin-bottom:20px;
+}
+
 .desc-title{
 	font-size: 1.6rem;
 	padding-bottom: 5px;
@@ -140,4 +149,21 @@
 	font-size: 0.9rem;
 	letter-spacing: 0.8px;
 	color: #fff;
+}
+
+/* == Download CV Buttons ===== */
+.downloadCV{
+	padding-left:20px;
+	padding-right: 20px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	letter-spacing: 1px;
+	margin-top: 30px;
+	letter-spacing:1px;
+  color: white;
+  border-color: gray !important;
+	&:hover{
+			font-weight: bold;
+      border-color: red !important;
+	}
 }

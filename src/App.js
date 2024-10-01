@@ -25,6 +25,8 @@ import ResumeScreen from "./Screens/Resume/Resume";
 function App() {
   const homeComponentRef = useRef(null);
   const AboutComponentRef = useRef(null);
+  const OurserviceComponentRef = useRef(null);
+  const ResumeComponentRef = useRef(null);
 
   const scrollToSecondComponent = (page) => {
     // alert (page);
@@ -34,9 +36,9 @@ function App() {
       case "about":
         AboutComponentRef.current.scrollIntoView({ behavior: "smooth" });
       case "ourservice":
-        AboutComponentRef.current.scrollIntoView({ behavior: "smooth" });
+        OurserviceComponentRef.current.scrollIntoView({ behavior: "smooth" });
       case "resume":
-        AboutComponentRef.current.scrollIntoView({ behavior: "smooth" });
+        ResumeComponentRef.current.scrollIntoView({ behavior: "smooth" });
       // case 'home': secondComponentRef.current.scrollIntoView({ behavior: "smooth" });
     }
     // secondComponentRef.current.scrollIntoView({ behavior: "smooth" });
@@ -79,7 +81,7 @@ function App() {
         </div>
 
         <div
-          ref={AboutComponentRef}
+          ref={OurserviceComponentRef}
           id="ourservice"
           onMouseEnter={() => handleMouseEnter("ourservice")}
           onMouseLeave={handleMouseLeave}
@@ -88,9 +90,9 @@ function App() {
         </div>
 
         <div
-          ref={AboutComponentRef}
+          ref={ResumeComponentRef}
           id="resume"
-          onMouseEnter={() => handleMouseEnter("ResumeScreen")}
+          onMouseEnter={() => handleMouseEnter("resume")}
           onMouseLeave={handleMouseLeave}
         >
           <ResumeScreen />
