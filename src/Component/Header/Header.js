@@ -42,7 +42,9 @@ const CustomHeader = ({ onNavClick, hoveredSection }) => {
       >
         <div style={{ color: "white" }}>
           <Navbar.Brand
-            href="#home"
+            // href="#home"
+            // href="#/"
+            href={"itspradip"}
             className="text-white me-auto test"
             onClick={() => {
               setcurrentSection("home");
@@ -51,54 +53,97 @@ const CustomHeader = ({ onNavClick, hoveredSection }) => {
           >
             <strong style={{ fontSize: 30, color: "#fff" }}>Pradip</strong>
           </Navbar.Brand>
+
         </div>
 
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="mx-auto">
-            <Nav.Link
-              href="#home"
+            {/* <Nav.Link
+              // href="#home"
               className={currentSection == "home" ? "active" : ""}
+              // onClick={() => {
+              //   setcurrentSection("home");
+              //   onNavClick("home");
+              // }}
+            >
+              Home
+            </Nav.Link> */}
+            <Link className={`nav-link ${currentSection == "home" ? "active" : ""}`} to="/itspradip" 
               onClick={() => {
                 setcurrentSection("home");
                 onNavClick("home");
               }}
-            >
-              Home
-            </Nav.Link>
-            <Nav.Link
-              href="#about"
+            >Home</Link>
+
+            {/* <Nav.Link
+              // href="#about"
               className={currentSection == "about" ? "active" : ""}
+              // onClick={() => {
+              //   setcurrentSection("about");
+              //   onNavClick("about");
+              // }}
+            >
+              About
+            </Nav.Link> */}
+            <Link className={`nav-link ${currentSection == "about" ? "active" : ""}`} to="/itspradip" 
               onClick={() => {
                 setcurrentSection("about");
                 onNavClick("about");
               }}
-            >
-              About
-            </Nav.Link>
-            <Nav.Link
-              href="#ourservice"
+            >About</Link>
+
+
+            {/* <Nav.Link
+              // href="#ourservice"
               className={currentSection == "ourservice" ? "active" : ""}
+              // onClick={() => {
+              //   setcurrentSection("ourservice");
+              //   onNavClick("ourservice");
+              // }}
+            >
+              What I Do
+            </Nav.Link> */}
+
+            <Link className={`nav-link ${currentSection == "ourservice" ? "active" : ""}`} to="/itspradip" 
               onClick={() => {
                 setcurrentSection("ourservice");
                 onNavClick("ourservice");
               }}
-            >
-              What I Do
-            </Nav.Link>
-            <Nav.Link
-              href="#resume"
+            >What I Do</Link>
+
+
+            {/* <Nav.Link
+              // href="#resume"
               className={currentSection == "resume" ? "active" : ""}
+              // onClick={() => {
+              //   setcurrentSection("resume");
+              //   onNavClick("resume");
+              // }}
+            >
+              Resume
+            </Nav.Link> */}
+
+            <Link className={`nav-link ${currentSection == "resume" ? "active" : ""}`} to="/itspradip" 
               onClick={() => {
                 setcurrentSection("resume");
                 onNavClick("resume");
               }}
-            >
-              Resume
-            </Nav.Link>
-            <Nav.Link href="#portfolio">Portfolio</Nav.Link>
+            >Resume</Link>
+
+            
+            <Link className={`nav-link ${currentSection == "blog" ? "active" : ""}`} to="/blog" 
+              onClick={() => {
+                setcurrentSection("blog");
+                // onNavClick("about");
+              }}
+            >Blog</Link>
+
+
+            {/* <Nav.Link href="#portfolio">Portfolio</Nav.Link>
             <Nav.Link href="#client">Client</Nav.Link>
-            <Nav.Link href="#contact">Contact</Nav.Link>
-            ResumeScreen
+            <Nav.Link href="#contact">Contact</Nav.Link> */}
+
+
             {/* <Link className="nav-link" to="home">Home</Link>
             <Link className="nav-link" to="about">About</Link>
             <Link className="nav-link" to="service">What I Do</Link>
