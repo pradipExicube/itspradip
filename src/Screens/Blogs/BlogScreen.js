@@ -56,7 +56,8 @@ function BlogScreen(props) {
                       <Card style={{ marginBottom:20}} className="custom_card"
                         onClick={()=>{
                           // navigate(`/BlogDetails/${12}`);
-                          navigate('/Blog-details',{ state: item?.uid })
+                          // navigate('/Blog-details',{ state: item?.uid })
+                          navigate(`/Blog-details/${item?.uid}`)
                         }}
                       >
                         <Card.Img variant="top" src="https://i.postimg.cc/C17LsMwP/09513f00-daeb-11e9-83db-89ca99418153.png" style={{height:'15rem',objectFit:'cover'}} />

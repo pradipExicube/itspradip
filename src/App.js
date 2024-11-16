@@ -133,7 +133,7 @@ function App() {
         <Routes>
           <Route exact path="/blog" element={<BlogScreen />} />
           {/* <Route exact path="/Blog-details/:id" element={<BlogDetails />} /> */}
-          <Route exact path="/Blog-details" element={<BlogDetails />} />
+          <Route exact path="/Blog-details/:id" element={<BlogDetails />} />
         </Routes>
       </div>
     </Router>
