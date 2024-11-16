@@ -38,20 +38,29 @@ const CustomHeader = ({ onNavClick, hoveredSection }) => {
           flexDirection: "row",
           justifyContent: "space-between",
           flex: 1,
+          marginLeft:20,
+          marginRight:10
         }}
       >
-        <div style={{ color: "white" }}>
+        <div style={{ color: "white"}}>
           <Navbar.Brand
-            // href="#home"
-            // href="#/"
-            href={"itspradip"}
-            className="text-white me-auto test"
-            onClick={() => {
-              setcurrentSection("home");
-              onNavClick("home");
-            }}
+            // href={"itspradip"}
+            // to="/itspradip"
+            className="text-white me-auto"
+            // onClick={() => {
+            //   setcurrentSection("home");
+            //   onNavClick("home");
+            // }}
           >
-            <strong style={{ fontSize: 30, color: "#fff" }}>Pradip</strong>
+            {/* <strong style={{ fontSize: 30, color: "#fff" }}>Pradip</strong> */}
+            <Link 
+            className="nav-link" to="/itspradip" 
+              onClick={() => {
+                setcurrentSection("itspradip");
+                onNavClick("itspradip");
+              }}
+            >Pradip</Link>
+
           </Navbar.Brand>
 
         </div>

@@ -24,6 +24,7 @@ import OurserviceScreen from "./Screens/OurServices/OurService";
 import ResumeScreen from "./Screens/Resume/Resume";
 import BlogScreen from "./Screens/Blogs/BlogScreen";
 import WelcomeScreen from "./Screens/WelcomeScreen/WelcomeScreen";
+import BlogDetails from "./Screens/BlogDetails/BlogDetails";
 function App() {
   const homeComponentRef = useRef(null);
   const AboutComponentRef = useRef(null);
@@ -34,11 +35,11 @@ function App() {
   const [checkstatus, setcheckstatus] = useState(false);
   
 
-  // useEffect(()=>{
-  //   setTimeout(() => {
-  //     scrollToComponent('about')
-  //   }, 3000);
-  // },[])
+  useEffect(()=>{
+    setTimeout(() => {
+      scrollToComponent('about')
+    }, 3000);
+  },[])
 
 
 
@@ -131,35 +132,9 @@ function App() {
 
         <Routes>
           <Route exact path="/blog" element={<BlogScreen />} />
+          {/* <Route exact path="/Blog-details/:id" element={<BlogDetails />} /> */}
+          <Route exact path="/Blog-details" element={<BlogDetails />} />
         </Routes>
-
-        {/* <Routes>
-          <Route exact
-            path="/"
-            element={
-              <>
-                <div 
-                  ref={homeComponentRef}
-                  id="home"
-                  onMouseEnter={() => handleMouseEnter("home")}
-                  onMouseLeave={handleMouseLeave}
-                >
-                  <HomeScreen />
-                </div>
-                <div 
-                  ref={AboutComponentRef}
-                  id="about"
-                  onMouseEnter={() => handleMouseEnter("about")}
-                  onMouseLeave={handleMouseLeave}
-                >
-                  <AboutScreen />
-                </div>
-              </>
-            }
-          />
- 
-          <Route exact path="/contact" element={<ContactScreen />} />
-        </Routes> */}
       </div>
     </Router>
   );

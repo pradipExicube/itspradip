@@ -1,9 +1,8 @@
 /* == relative and absolute view design [About us + know more] ==== */
 .blog-mainDiv {
-  /* height:window.innerHeight, */
-  background-color: #272727;
-  position: relative;
-  padding-bottom: 50px;
+  /* background-color: #272727; */
+  /* position: relative;
+  padding-bottom: 50px; */
   /* height:100vh; */
 }
 .customFont {
