@@ -120,18 +120,6 @@ const CustomHeader = ({ onNavClick, hoveredSection }) => {
               }}
             >What I Do</Link>
 
-
-            {/* <Nav.Link
-              // href="#resume"
-              className={currentSection == "resume" ? "active" : ""}
-              // onClick={() => {
-              //   setcurrentSection("resume");
-              //   onNavClick("resume");
-              // }}
-            >
-              Resume
-            </Nav.Link> */}
-
             <Link className={`nav-link ${currentSection == "resume" ? "active" : ""}`} to="/itspradip" 
               onClick={() => {
                 setcurrentSection("resume");
@@ -140,7 +128,13 @@ const CustomHeader = ({ onNavClick, hoveredSection }) => {
             >Resume</Link>
 
             
-            <Link className={`nav-link ${currentSection == "blog" ? "active" : ""}`} to="/blog" 
+            {/* <Link className={`nav-link ${currentSection == "blog" ? "active" : ""}`} to="/blog" 
+              onClick={() => {
+                setcurrentSection("blog");
+                // onNavClick("about");
+              }}
+            >Blog</Link> */}
+            <Link className={`nav-link ${currentSection == "blog" ? "active" : ""}`} to="/itspradip/blog" 
               onClick={() => {
                 setcurrentSection("blog");
                 // onNavClick("about");
@@ -148,18 +142,7 @@ const CustomHeader = ({ onNavClick, hoveredSection }) => {
             >Blog</Link>
 
 
-            {/* <Nav.Link href="#portfolio">Portfolio</Nav.Link>
-            <Nav.Link href="#client">Client</Nav.Link>
-            <Nav.Link href="#contact">Contact</Nav.Link> */}
-
-
-            {/* <Link className="nav-link" to="home">Home</Link>
-            <Link className="nav-link" to="about">About</Link>
-            <Link className="nav-link" to="service">What I Do</Link>
-            <Link className="nav-link" to="service">Resume</Link>
-            <Link className="nav-link" to="service">Portfolio</Link>
-            <Link className="nav-link" to="service">Client</Link>
-            <Link className="nav-link" to="service">Contact</Link> */}
+            
           </Nav>
         </Navbar.Collapse>
         {/* </div> */}

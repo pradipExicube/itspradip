@@ -75,68 +75,126 @@ function App() {
   };
 
   return (
-    <Router>
-      <div>
-        <CustomHeader
-          // onNavClick={scrollToSecondComponent}
-          hoveredSection={hoveredSection}
-          onNavClick={scrollToComponent}
-        />
+    // <Router>
+    //   <div>
+    //     <CustomHeader
+    //       // onNavClick={scrollToSecondComponent}
+    //       hoveredSection={hoveredSection}
+    //       onNavClick={scrollToComponent}
+    //     />
         
 
-        <Routes>
-          <Route
-            exact
-            path="/itspradip"
-            element={
-              // <WelcomeScreen />
-              <>
-                <div
-                  ref={homeComponentRef}
-                  id="home"
-                  onMouseEnter={() => handleMouseEnter("home")}
-                  onMouseLeave={handleMouseLeave}
-                >
-                  <HomeScreen />
-                </div>
-                <div
-                  ref={AboutComponentRef}
-                  id="about"
-                  onMouseEnter={() => handleMouseEnter("about")}
-                  onMouseLeave={handleMouseLeave}
-                >
-                  <AboutScreen />
-                </div>
+    //     <Routes>
+    //       <Route
+    //         exact
+    //         path="/itspradip"
+    //         element={
+    //           // <WelcomeScreen />
+    //           <>
+    //             <div
+    //               ref={homeComponentRef}
+    //               id="home"
+    //               onMouseEnter={() => handleMouseEnter("home")}
+    //               onMouseLeave={handleMouseLeave}
+    //             >
+    //               <HomeScreen />
+    //             </div>
+    //             <div
+    //               ref={AboutComponentRef}
+    //               id="about"
+    //               onMouseEnter={() => handleMouseEnter("about")}
+    //               onMouseLeave={handleMouseLeave}
+    //             >
+    //               <AboutScreen />
+    //             </div>
 
-                <div
-                  ref={OurserviceComponentRef}
-                  id="ourservice"
-                  onMouseEnter={() => handleMouseEnter("ourservice")}
-                  onMouseLeave={handleMouseLeave}
-                >
-                  <OurserviceScreen />
-                </div>
+    //             <div
+    //               ref={OurserviceComponentRef}
+    //               id="ourservice"
+    //               onMouseEnter={() => handleMouseEnter("ourservice")}
+    //               onMouseLeave={handleMouseLeave}
+    //             >
+    //               <OurserviceScreen />
+    //             </div>
 
-                <div
-                  ref={ResumeComponentRef}
-                  id="resume"
-                  onMouseEnter={() => handleMouseEnter("resume")}
-                  onMouseLeave={handleMouseLeave}
-                >
-                  <ResumeScreen />
-                </div>
-              </>
-            }
-          />
-        </Routes>
+    //             <div
+    //               ref={ResumeComponentRef}
+    //               id="resume"
+    //               onMouseEnter={() => handleMouseEnter("resume")}
+    //               onMouseLeave={handleMouseLeave}
+    //             >
+    //               <ResumeScreen />
+    //             </div>
+    //           </>
+    //         }
+    //       />
+    //       <Route exact path="/blog" element={<BlogScreen />} />
+    //       <Route exact path="/Blog-details/:id" element={<BlogDetails />} />
+    //     </Routes>
 
-        <Routes>
-          <Route exact path="/blog" element={<BlogScreen />} />
-          {/* <Route exact path="/Blog-details/:id" element={<BlogDetails />} /> */}
-          <Route exact path="/Blog-details/:id" element={<BlogDetails />} />
-        </Routes>
-      </div>
-    </Router>
+    //     <Routes>
+    //       <Route exact path="/itspradip/blog" element={<BlogScreen />} />
+    //       <Route exact path="/itspradip//Blog-details/:id" element={<BlogDetails />} />
+    //     </Routes>
+    //   </div>
+    // </Router>
+
+    <>
+    <CustomHeader
+           // onNavClick={scrollToSecondComponent}
+           hoveredSection={hoveredSection}
+           onNavClick={scrollToComponent}
+         />
+    <Routes>
+           <Route
+             exact
+             path="/itspradip"
+             element={
+               // <WelcomeScreen />
+               <>
+                 <div
+                   ref={homeComponentRef}
+                   id="home"
+                   onMouseEnter={() => handleMouseEnter("home")}
+                   onMouseLeave={handleMouseLeave}
+                 >
+                   <HomeScreen />
+                 </div>
+                 <div
+                   ref={AboutComponentRef}
+                   id="about"
+                   onMouseEnter={() => handleMouseEnter("about")}
+                   onMouseLeave={handleMouseLeave}
+                 >
+                   <AboutScreen />
+                 </div>
+                <div
+                   ref={OurserviceComponentRef}
+                   id="ourservice"
+                   onMouseEnter={() => handleMouseEnter("ourservice")}
+                   onMouseLeave={handleMouseLeave}
+                 >
+                   <OurserviceScreen />
+                 </div>
+                <div
+                   ref={ResumeComponentRef}
+                   id="resume"
+                   onMouseEnter={() => handleMouseEnter("resume")}
+                   onMouseLeave={handleMouseLeave}
+                 >
+                   <ResumeScreen />
+                 </div>
+               </>
+             }
+           />
+
+
+      {/* <Route path="/itspradip" element={<WelcomeScreen />} /> */}
+      <Route path="/itspradip/blog" element={<BlogScreen />} />
+      <Route path="/itspradip/Blog-details/:id" element={<BlogDetails />} />
+    </Routes>
+    </>
+
   );
 }
 
