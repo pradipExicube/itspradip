@@ -11,7 +11,7 @@ root.render(
   //   <App />
   // </React.StrictMode>
   <React.StrictMode>
-      <BrowserRouter>
+      <BrowserRouter basename="/itspradip">
          <App />
       </BrowserRouter>
    </React.StrictMode>
