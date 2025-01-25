@@ -4,6 +4,8 @@ import { Button, Row, Container, Col } from "react-bootstrap";
 import "./OurService.css";
 
 import ionicLogo from "../../images/image/ionic.svg";
+import reactLogo from "../../images/image/reactnative.svg";
+import cordovaLogo from "../../images/image/cordova.svg";
 
 function OurserviceScreen(props) {
   const navigate = useNavigate();
@@ -11,22 +13,28 @@ function OurserviceScreen(props) {
     "https://drive.google.com/file/d/1NZY5ywhj6T06tjJ3BJoGG8hypX4afsj2/view?usp=sharing";
   const services = [
     {
-      s_name: "Ionic Framework",
+      s_name: "React Native",
       s_description:
-        "I help you build brand for your business at an affordable price. Thousands of clients have procured exceptional resultswhile working with our dedicated team. when an unknown printer took a galley of type and scrambled it to make a type specimenbook.",
-      s_imgUrl: ionicLogo,
+        "React Native is an open-source mobile application development framework created by Facebook. It allows developers to build natively rendered mobile apps for Android, iOS, and UWP (Universal Windows Platform) using React, a JavaScript library for building user interfaces",
+      s_imgUrl: reactLogo,
     },
     {
       s_name: "Ionic Framework",
       s_description:
-        "I help you build brand for your business at an affordable price. Thousands of clients have procured exceptional resultswhile working with our dedicated team. when an unknown printer took a galley of type and scrambled it to make a type specimenbook.",
+        "The Ionic Framework is a popular open-source front-end framework for building hybrid mobile apps and progressive web apps. It uses web technologies such as HTML, CSS, and JavaScript to create native-like apps for mobile devices",
       s_imgUrl: ionicLogo,
     },
     {
-      s_name: "Ionic Framework",
+      s_name: "Cordova",
       s_description:
-        "I help you build brand for your business at an affordable price. Thousands of clients have procured exceptional resultswhile working with our dedicated team. when an unknown printer took a galley of type and scrambled it to make a type specimenbook.",
+        "Cordova is an open-source framework developed by Apache, primarily used for building hybrid mobile applications. It allows developers to create apps for multiple platforms, including Android and iOS, using a single codebase",
       s_imgUrl: ionicLogo,
+    },
+    {
+      s_name: "React JS",
+      s_description:
+        "React JS is a popular JavaScript library used for building user interfaces and single-page applications. Developed by Facebook (now Meta), React allows developers to create reusable UI components and manage the state of complex applications efficiently.",
+      s_imgUrl: reactLogo,
     },
   ];
 

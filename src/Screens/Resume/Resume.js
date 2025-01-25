@@ -17,24 +17,47 @@ function ResumeScreen(props) {
   const navigate = useNavigate();
   const cvURL =
     "https://drive.google.com/file/d/1NZY5ywhj6T06tjJ3BJoGG8hypX4afsj2/view?usp=sharing";
+
   const services = [
     {
-      s_name: "Ionic Framework",
-      s_description:
-        "I help you build brand for your business at an affordable price. Thousands of clients have procured exceptional resultswhile working with our dedicated team. when an unknown printer took a galley of type and scrambled it to make a type specimenbook.",
-      s_imgUrl: ionicLogo,
+      year:'2019 - Current',
+      course:"Application Developer",
+      from_where:"Ivan infotech Pvt. Ltd.",
+      description:"I am responsible for building High performance Mobile Application using Ionic framework and Cordova and react native."
+      // description:"I am responsible for building High performance Mobile"
     },
     {
-      s_name: "Ionic Framework",
-      s_description:
-        "I help you build brand for your business at an affordable price. Thousands of clients have procured exceptional resultswhile working with our dedicated team. when an unknown printer took a galley of type and scrambled it to make a type specimenbook.",
-      s_imgUrl: ionicLogo,
+      year:'2017 - 2019',
+      course:"Software Developer",
+      from_where:"Exicube App Solutions Pvt. Ltd.",
+      description:"I am responsible for building High performance Mobile Application using Ionic framework and Cordova and react native "
     },
     {
-      s_name: "Ionic Framework",
-      s_description:
-        "I help you build brand for your business at an affordable price. Thousands of clients have procured exceptional resultswhile working with our dedicated team. when an unknown printer took a galley of type and scrambled it to make a type specimenbook.",
-      s_imgUrl: ionicLogo,
+      year:'2016 - 2017',
+      course:"Software Developer",
+      from_where:"Purple Fox Labs",
+      description:"I am responsible for building Mobile Application using Ionic framework and Cordova. "
+    },
+  ];
+
+  const education = [
+    {
+      year:'2011 - 2014',
+      course:"Bachelor of Computer Application",
+      from_where:"Techno India Institute of Technology",
+      description:"I am purchasing BCA degree (Bachelor of computer application) from Techno India Institute of Technology"
+    },
+    {
+      year:'2010 - 2011',
+      course:"Higher Secondary",
+      from_where:"Jyangra Adarsha Vidyamandir",
+      description:"I am purchasing my higher secondary degree from Jyangra Adarsha Vidyamandir"
+    },
+    {
+      year:'2008 - 2009',
+      course:"Secondary Education",
+      from_where:"Prafulla Kanan Deshapriya Vidyamandir",
+      description:"I am purchasing my secondary degree from Prafulla Kanan Deshapriya Vidyamandir"
     },
   ];
 
@@ -65,9 +88,9 @@ function ResumeScreen(props) {
           <Row className="justify-content-center align-items-center">
             <Col xs={12} md={6} lg={6}>
               <div className="desc-title box">My Education</div>
-              {services.map((item, index) => {
+              {education.map((item, index) => {
                 return (
-                  <Col xs={12} md={12} lg={12}>
+                  <Col xs={12} md={12} lg={12} >
                     <div
                       style={{
                         color: "white",
@@ -75,6 +98,8 @@ function ResumeScreen(props) {
                         marginBottom: 20,
                         padding: 20,
                         borderRadius: 5,
+                        // minHeight:200
+                        minHeight:220
                       }}
                     >
                       <div>
@@ -90,7 +115,7 @@ function ResumeScreen(props) {
                             letterSpacing: 0.5,
                           }}
                         >
-                          2000-2004
+                          {item?.year}
                         </span>
                       </div>
                       <div
@@ -102,7 +127,7 @@ function ResumeScreen(props) {
                         }}
                       >
                         {" "}
-                        Computer Science{" "}
+                        {`${item?.course} `}
                       </div>
                       <div
                         style={{
@@ -112,14 +137,12 @@ function ResumeScreen(props) {
                         }}
                       >
                         {" "}
-                        Techno india unoversity{" "}
+                        {`${item?.from_where} `}
                       </div>
                       <div
                         style={{ paddingTop: 8, color: "rgba(255,255,255,.5)" }}
                       >
-                        I help you build brand for your business at an
-                        affordable price. Thousands of clients have procured
-                        exceptional
+                        {item?.description}
                       </div>
                     </div>
                   </Col>
@@ -139,6 +162,8 @@ function ResumeScreen(props) {
                           marginBottom: 20,
                           padding: 20,
                           borderRadius: 5,
+                          // minHeight:200
+                          minHeight:220
                         }}
                       >
                         <div>
@@ -154,7 +179,7 @@ function ResumeScreen(props) {
                               letterSpacing: 0.5,
                             }}
                           >
-                            2012-2016
+                            {item?.year}
                           </span>
                         </div>
                         <div
@@ -166,7 +191,7 @@ function ResumeScreen(props) {
                           }}
                         >
                           {" "}
-                          Software Developer
+                          {`${item?.course} `}
                         </div>
                         <div
                           style={{
@@ -176,7 +201,7 @@ function ResumeScreen(props) {
                           }}
                         >
                           {" "}
-                          Ivan infotech pvt. ltd.{" "}
+                          {`${item?.from_where} `}
                         </div>
                         <div
                           style={{
@@ -184,9 +209,10 @@ function ResumeScreen(props) {
                             color: "rgba(255,255,255,.5)",
                           }}
                         >
-                          I help you build brand for your business at an
+                          {/* I help you build brand for your business at an
                           affordable price. Thousands of clients have procured
-                          exceptional
+                          exceptional */}
+                          {`${item?.description} `}
                         </div>
                       </div>
                     </Col>
@@ -218,7 +244,7 @@ function ResumeScreen(props) {
                     style={{
                       color: "white",
                       paddingBottom: 10,
-                      letterSpacing: 1,
+                      letterSpacing: 1
                     }}
                   >
                     {item?.name}

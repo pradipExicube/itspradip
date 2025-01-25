@@ -36,7 +36,7 @@ const CustomCodeSnippet = ({ children }) => {
               <div style={{fontSize:'2rem',letterSpacing:0.5,fontWeight:'600',marginTop:20}}>Integrating Firebase with React Native</div>
               <div style={{marginTop:20}}>
                 <Card>
-                  <Card.Img variant="top" src="https://i.postimg.cc/C17LsMwP/09513f00-daeb-11e9-83db-89ca99418153.png" style={{height:'20rem',objectFit:'cover'}} />
+                  <Card.Img variant="top" src="https://i.postimg.cc/Jnp7FSx4/Conducting-Research-Projects-Educational-Presentation-in-Pink-and-Yellow-Colorful-Line-Style.png" style={{height:'25rem',objectFit:'cover'}} />
                 </Card>
               </div>
 
